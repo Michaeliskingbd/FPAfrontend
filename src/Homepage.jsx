@@ -15,7 +15,7 @@ const Homepage = () => {
 
   const fetchPortfolioData = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/portfolio/${riskScore}`);
+      const response = await axios.get(`https://fpabackend.onrender.com/portfolio/${riskScore}`);
       setPortfolioData(response.data);
     } catch (error) {
       console.error('Error fetching data:', error);
